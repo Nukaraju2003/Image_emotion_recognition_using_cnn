@@ -37,6 +37,7 @@ surprised_test = 0
 neutral_test = 0
 
 df = pd.read_csv('./fer2013.csv')
+# df = pd.read_csv('./fer2013.csv')
 mat = np.zeros((48,48),dtype=np.uint8)
 print("Saving images...")
 
