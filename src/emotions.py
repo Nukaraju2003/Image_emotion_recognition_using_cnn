@@ -42,8 +42,8 @@ def plot_model_history(model_history):
     plt.show()
 
 # Define data generators
-train_dir = 'src\\data\\train'
-val_dir = 'src\\data\\test'
+train_dir = './data/train'
+val_dir = './data/test' 
 
 num_train = 28709
 num_val = 7178
@@ -96,7 +96,7 @@ if mode == "train":
             validation_data=validation_generator,
             validation_steps=num_val // batch_size)
     plot_model_history(model_info)
-    model.save_weights('./model.h5')
+    model.save_weights('model.h5')
 
 # emotions will be displayed on your face from the webcam feed
 elif mode == "display":
