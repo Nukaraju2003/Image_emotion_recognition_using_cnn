@@ -7,7 +7,7 @@ This project aims to classify the emotion on a person's face into one of **seven
 ## Dependencies
 
 * Python 3, [OpenCV](https://opencv.org/), [Tensorflow](https://www.tensorflow.org/)
-* To install the required packages, run `python -m venv venv`,`venv/Scripts/activate`, `pip install -r requirements.txt`.
+
 
 ## Basic Usage
 
@@ -18,6 +18,10 @@ The repository is currently compatible with `tensorflow-2.0` and makes use of th
 ```bash
 git clone https://github.com/Nukaraju2003/emotion_detection.git
 cd Emotion-detection
+To install the required packages, run 
+`python -m venv venv`,
+`venv/Scripts/activate`, 
+`pip install -r requirements.txt`.
 ```
 
 * Download the FER-2013 dataset inside the `src` folder.
