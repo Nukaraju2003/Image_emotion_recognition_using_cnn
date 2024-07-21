@@ -97,8 +97,9 @@ model.add(Dense(7, activation='softmax'))
 
 # If you want to train the same model or try other models, go for this
 if mode == "train":
-    model.compile(loss='categorical_crossentropy',optimizer=Adam(lr=0.0001, decay=1e-6),metrics=['accuracy'])
-    model_info = model.fit_generator(
+    optimizer = Adam(learning_rate=0.0001, decay=1e-6)
+    model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+    model_info = model.fit(
             train_generator,
             steps_per_epoch=num_train // batch_size,
             epochs=num_epoch,
