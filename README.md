@@ -1,4 +1,4 @@
-# Emotion detection using deep learning
+# Emotion Detection from Facial Images Using Deep Learning: Classifying Emotions with a Deep CNN Trained on the FER-2013 Dataset
 
 ## Introduction
 
